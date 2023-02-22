@@ -2,6 +2,9 @@
 from book import book
 from user import user
 from university import university
+from animal import Animal
+from school import School
+from vehicle import Vehicle
 
 llibre1 = book("Hola", "Colibri", "Planeta", "Eduardo", "vermella", "dura")
 llibre1.info()
@@ -29,3 +32,33 @@ uni2 = university("348m", "641m", "120m", "122m2", "Estats Units", "California")
 uni2.university()
 uni2.setAltura("120m")
 uni2.university()
+
+
+
+# creacion del objecto vehiculo y sus atributos, al igual con todos school, animal
+vehicle1 = Vehicle("audi", "A3", "2016", "rojo", "5", "gasolina")
+vehicle1.parts()
+vehicle1.set_motor("diesel")
+vehicle1.parts()
+vehicle2 = Vehicle("mercedes", "45s", "2018", "azul", "5", "gasolina")
+vehicle2.parts()
+vehicle2.set_motor("hibrido")
+vehicle2.parts()
+
+animal1 = Animal("perro","cannis lupus", "2", "10", "blanco", "Pienso")
+animal1.salutacio()
+animal1.set_peso("11")
+animal1.salutacio()
+animal2 = Animal("gato","felis silvestris", "4", "8", "blanco y marron", "pienso")
+animal2.salutacio()
+animal2.set_color("naranja")
+animal2.salutacio()
+
+school1 = School("jaume balmes","pau claris","5000","120","973548762","9h-21h")
+school1.info()
+school1.set_numAlumnos("6000")
+school1.info()
+school2 = School("sagrada familia","calle falsa","4580","210","973546962","9h-21:30h")
+school2.info()
+school2.set_numProfesores("150")
+school2.info()
